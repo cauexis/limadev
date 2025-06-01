@@ -8,28 +8,22 @@
 <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-   <div class="background-layer">
+   
+  <div class="background-layer">
   <div class="bg1"></div>
   <div class="bg2" id="maskedBg"></div>
 </div>
     <div class="background-overlay"></div>
-  <header class="header">
-  <div class="header-left">
-    <img src="imagens/atk.png" alt="Attack on Titan Logo" class="logo" />
- </div>
-
-  <div class="header-center">
-    <h1 class="titulo">「進撃の巨人」</h1>
- </div>
-
-  <nav class="header-right">
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#personagens">Personagens</a></li>
-      <li><a href="#momentos">Momentos Épicos</a></li>
-    </ul>
+ <header class="mobile-header">
+  <img src="atack.png" alt="Logo" class="logo" />
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#sobre">Sobre</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#momentos">Momentos Épicos</a>
   </nav>
 </header>
+
 
   <section class="hero">
     <h1>T A T A K A E</h1>
