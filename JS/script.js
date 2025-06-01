@@ -39,3 +39,7 @@ document.addEventListener("mousemove", function (e) {
     slash.remove();
   }, 300); // rápido, como um corte
 });
+function toggleMenu() {
+    const nav = document.getElementById('mobileNav');
+    nav.classList.toggle('show');
+  }
