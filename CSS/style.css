@@ -351,3 +351,54 @@ footer {
     font-size: 0.8rem;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .header-left,
+  .header-center,
+  .header-right {
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .header-right ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .titulo,
+  .titulo.animado {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    word-break: break-word;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 30px 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
