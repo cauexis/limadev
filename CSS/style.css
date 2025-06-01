@@ -445,3 +445,30 @@ footer {
 .mobile-nav.show {
   display: flex;
 }
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+}
+
+.header-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
