@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.background-overlay {
+  background: url('../imagens/fundo2.png') no-repeat center center/cover;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+  filter: brightness(0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 80px;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #e63946;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-right ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header-right a:hover {
+  color: #e63946;
+}
+
+
+.logo {
+  height: 150px;
+  animation: pulse 2s infinite alternate;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px 0px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #e63946;
+  animation: slideDown 1.5s ease;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #e63946;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.momentos {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.momentos li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.momentos li::before {
+  content: '🔥';
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  font-size: 0.9rem;
+}
+
+/* Animações */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* Scroll fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mini-hero-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mini-hero-text h1 {
+  font-size: 1.8rem;
+  color: #e63946;
+}
+
+.mini-hero-text p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+/* Animação de entrada com fade + slide */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Brilho animado */
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 5px #e63946, 0 0 10px #e63946;
+  }
+  50% {
+    text-shadow: 0 0 15px #e63946, 0 0 30px #e63946;
+  }
+  100% {
+    text-shadow: 0 0 5px #e63946, 0 0 10px #e63946;
+  }
+}
+
+.titulo.animado {
+  font-size: 2.2rem;
+  color: #e63946;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeSlide 1s ease-out, shine 3s infinite ease-in-out;
+}
+.slash {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0));
+  pointer-events: none;
+  animation: fadeSlash 0.3s ease-out forwards;
+  z-index: 999;
+  box-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+@keyframes fadeSlash {
+  from {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  to {
+    opacity: 0;
+    transform: scaleX(2);
+  }
+}
+.cards a.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards a.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #e63946;
+}

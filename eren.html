@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eren Yeager - Detalhes</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background: #0a0a0a;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #e63946;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: fadeSlide 1s ease-out, shine 3s infinite ease-in-out;
+    }
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #e63946;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 40px;
+      color: #e63946;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #e63946;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    a.back:hover {
+      background-color: #e63946;
+      color: #0a0a0a;
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes shine {
+      0% {
+        text-shadow: 0 0 5px #e63946, 0 0 10px #e63946;
+      }
+      50% {
+        text-shadow: 0 0 15px #e63946, 0 0 30px #e63946;
+      }
+      100% {
+        text-shadow: 0 0 5px #e63946, 0 0 10px #e63946;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Eren Yeager</h1>
+  <img src="imagens/eren.jfif" alt="Eren Yeager" />
+  <p>
+    Eren Yeager é o protagonista de Attack on Titan. Ele é impulsivo, determinado e dedicado a proteger a humanidade contra os Titãs. Possui a habilidade de se transformar em Titã, o que o torna um dos maiores trunfos na luta contra os inimigos.
+  </p>
+  <p>
+    Sua jornada é marcada por conflitos internos, revelações chocantes e batalhas épicas que definem o destino do mundo.
+  </p>
+  <a href="index.html" class="back" target="_self">← Voltar ao Blog</a>
+</body>
+</html>
