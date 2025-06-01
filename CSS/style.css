@@ -282,3 +282,72 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 0 15px #e63946;
 }
+/* RESPONSIVIDADE PARA TELAS MENORES */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .header-left,
+  .header-center,
+  .header-right {
+    justify-content: center;
+    margin: 10px 0;
+    flex: unset;
+    width: 100%;
+  }
+
+  .header-right ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .titulo,
+  .titulo.animado {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards a.card {
+    width: 90%;
+  }
+
+  .momentos {
+    font-size: 1rem;
+  }
+
+  .mini-hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .mini-hero-text p {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
