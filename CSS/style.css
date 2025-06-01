@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-  height: 80px;
+  height: 100px;
 }
 
 .titulo {
@@ -311,8 +311,14 @@ footer {
   }
 
   .logo {
-    height: 100px;
+  width: 100px; 
+  height: auto;
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 120px;
   }
+}
 
   .hero h1 {
     font-size: 2rem;
@@ -374,7 +380,7 @@ footer {
   }
 
   .logo {
-  width: 80px; 
+  width: 100px; 
   height: auto;
 }
 @media (min-width: 768px) {
@@ -461,7 +467,7 @@ footer {
 }
 
 .logo {
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 @media (min-width: 768px) {
