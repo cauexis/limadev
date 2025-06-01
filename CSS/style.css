@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-  height: 100px;
+  height: 150px;
 }
 
 .titulo {
@@ -311,7 +311,7 @@ footer {
   }
 
   .logo {
-  width: 100px; 
+  width: 150px; 
   height: auto;
 }
 @media (min-width: 768px) {
@@ -380,7 +380,7 @@ footer {
   }
 
   .logo {
-  width: 100px; 
+  width: 150px; 
   height: auto;
 }
 @media (min-width: 768px) {
@@ -425,7 +425,7 @@ footer {
 }
 
 .logo {
-  height: 50px;
+  height: 100px;
 }
 
 .menu-toggle {
@@ -467,7 +467,7 @@ footer {
 }
 
 .logo {
-  width: 100px;
+  width: 150px;
   height: auto;
 }
 @media (min-width: 768px) {
