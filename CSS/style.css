@@ -460,10 +460,12 @@ footer {
 .header-title {
   flex-grow: 1;
   text-align: center;
-  font-size: 24px;
-  color: white;
+  font-size: 18px;     
+  color: #e63946;      
   margin: 0;
+  font-weight: bold;
 }
+
 
 .menu-toggle {
   font-size: 24px;
